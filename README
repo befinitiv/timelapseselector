@@ -1,0 +1,7 @@
+Script that finds images for a timelapse video that give a "smooth" experience
+
+
+Usage scenario: You have a static (!) camera that takes N photos per day. You provide the script the "best" image of the first day and it looks for similar images in the following days.
+
+In more detail: All pictures of a day are compared to the last selected image and the most similar is selected. Then the process starts again for the following day.
+So there is a slight risk that the script runs into the wrong direction. Another side-effect is that it behaves a bit laggy. Think of starting with winter images with little sun then the script will for some time prefer images with little sun. But the laggyness is very little.
